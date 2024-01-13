@@ -1,4 +1,4 @@
-let baseURL = "http://127.0.0.1:3000";
+let baseURL = "https://bo-ke-wang-zhan-backend.onrender.com";
 
 // 建立 axios instance
 let http = axios.create({
