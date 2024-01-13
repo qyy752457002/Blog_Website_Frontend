@@ -14,9 +14,12 @@ formIpts[3].onchange = function () {
   http
     .post(uploadAPI, fd)
     .then((r) => {
-      console.log(r);
+      // console.log(r);
       r.data.data;
       headImgUrl = r.data.data;
+
+      console.log(headImgUrl);
+
     })
     .catch((err) => {
       console.log(err);
@@ -34,7 +37,6 @@ regForm.onsubmit = async (evt) => {
   let password = formIpts[2].value;
 
   // 变量名尽量和后端需要参数名一样
-
   let r = await http.post("/api/users", {
     username,
     nickname,
